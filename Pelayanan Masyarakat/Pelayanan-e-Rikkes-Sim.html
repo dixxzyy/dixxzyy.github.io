@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="myEFIN" />
+    <link rel="apple-touch-icon" href="assets/images/icon/144.png" />
+
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#eeeeee" />
+
+    <!-- Your app title -->
+    <title>e-Rikkes SIM&trade; by Nagabendu</title>
+
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="framework7/css/framework7.bundle.min.css" />
+    <link rel="stylesheet" href="framework7/css/framework7-icons.css" />
+
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/my-app.css" />
+    <!-- <link rel="manifest" href="manifest.json"> -->
+  </head>
+
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main OpenSans">
+        <!-- navbar -->
+
+        <div class="navbar">
+          <div class="navbar-transparent"></div>
+          <div class="navbar-inner">
+            <div class="left">&nbsp;</div>
+            <div class="title">
+              <img
+                src="assets/images/logo-text.png"
+                height="50"
+                style="padding-top: 4px"
+              />
+            </div>
+            <div class="right">&nbsp;</div>
+          </div>
+        </div>
+
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page bg-color-djp text-color-black">
+          <div
+            class="swiper-container swiper-init"
+            data-speed="400"
+            data-space-between="0"
+            data-pagination='{"el": ".swiper-pagination"}'
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide text-align-center my-full-div">
+                <div class="dead-center">
+                  <img
+                    src="assets/images/slide-1.png"
+                    style="padding-top: 4px; height: 40vh"
+                  />
+                  <div class="spacer"></div>
+                  <span style="font-size: 1.8em" class="OpenSans extra-bold"
+                    >e-Rikkes SIM</span
+                  >
+                  <div class="spacer"></div>
+                  Pemeriksaan kesehatan berbasis teknologi Secara Online dalam
+                  Proses Penerbitan Sim
+                  <div class="spacer"></div>
+                  <a
+                    href="javascript:gotoform()"
+                    class="button button-fill color-theme-black my-outline"
+                    style="width: 80%; margin: 0 auto"
+                    >Mulai Sekarang</a
+                  >
+                </div>
+              </div>
+
+              <div class="swiper-slide text-align-center my-full-div">
+                <div class="dead-center">
+                  <img
+                    src="assets/images/slide-2.png"
+                    style="padding-top: 4px; width: 57vw"
+                  />
+                  <div class="spacer"></div>
+                  <span style="font-size: 1.8em" class="OpenSans extra-bold"
+                    >Pemohon SIM</span
+                  >
+                  <div class="spacer"></div>
+                  Seluruh masyarakat pemohon penerbitan SIM baru / perpanjangan
+                  dapat langsung mendaftarkan untuk pemeriksaan.
+                  <div class="spacer"></div>
+                  <a
+                    href="javascript:gotoform()"
+                    class="button button-fill color-theme-black my-outline"
+                    style="width: 80%; margin: 0 auto"
+                    >Mulai Sekarang</a
+                  >
+                </div>
+              </div>
+
+              <div class="swiper-slide text-align-center my-full-div">
+                <div class="dead-center">
+                  <img
+                    src="assets/images/slide-3.png"
+                    style="padding-top: 4px; width: 68vw"
+                  />
+                  <div class="spacer"></div>
+                  <span style="font-size: 1.8em" class="OpenSans extra-bold"
+                    >Bayar Tinggal Scan</span
+                  >
+                  <div class="spacer"></div>
+                  Nikmati kemudahan dalam bertransaksi, tinggal scan saja.
+                  Mudahkan #GerakanNasionalNonTunai
+                  <div class="spacer"></div>
+                  <a
+                    href="javascript:gotoform()"
+                    class="button button-fill color-theme-black my-outline"
+                    style="width: 80%; margin: 0 auto"
+                    >Mulai Sekarang</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination theme-color-black"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KP4Y286FQW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KP4Y286FQW");
+    </script>
+
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script
+      type="text/javascript"
+      src="framework7/js/framework7.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/cleave/cleave.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="assets/js/my-app.js"></script>
+    <script type="text/javascript" src="assets/js/pages.js"></script>
+
+    <script type="text/javascript">
+      //
+      window.addEventListener("DOMContentLoaded", deviceReady, false);
+      //
+      function deviceReady() {
+        //
+        document.addEventListener("backbutton", onBackKeyDown, false);
+        //
+      }
+
+      // //Prevent Android Back Button Using Javascript
+      // history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+      //       window.addEventListener('popstate', (e) => {
+      //           e.preventDefault();
+      //           // Insert Your Logic Here, You Can Do Whatever You Want
+      //           history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+      //       });
+
+      // if ('serviceWorker' in navigator) {
+      // 	window.addEventListener('load', function() {
+      // 	navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+      // 	// Registration was successful
+      // 	console.log('Registered!');
+      // 	}, function(err) {
+      // 	// registration failed :(
+      // 		console.log('ServiceWorker registration failed: ', err);
+      // 	}).catch(function(err) {
+      // 		console.log(err);
+      // 	});
+      // 	});
+      // 	} else {
+      // 	console.log('service worker is not supported');
+      // }
+      // //
+      // navigator.serviceWorker.ready.then(function(registration) {
+      // 	if (!registration.pushManager) {
+      // 		//alert('No push notifications support.');
+      // 		console.log('Push notification is not supported');
+      // 		return false;
+      // 	}
+      // 	//To subscribe `push notification` from push manager
+      // 	registration.pushManager.subscribe({
+      // 			userVisibleOnly: true //Always show notification when received
+      // 		})
+      // 		.then(function (subscription) {
+      // 			console.log('Subscribed.');
+      // 		})
+      // 		.catch(function (error) {
+      // 		console.log('Subscription error: ', error);
+      // 	});
+      // });
+    </script>
+  </body>
+</html>

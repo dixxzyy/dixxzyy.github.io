@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+  <head>
+    <link rel="manifest" href="manifest.json" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; media-src *; img-src * data:; connect-src * ;"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="e-avis" />
+    <meta name="apple-mobile-web-app-title" content="e-avis" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="msapplication-starturl" content="/index.html" />
+    <meta
+      name="viewport"
+      content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="theme-color" content="#2196f3" />
+    <!-- Your app title -->
+    <title>e-AVIS&trade; by Nagabendu</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="./assets/css/framework7.bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/framework7-icons.css" />
+    <link rel="stylesheet" href="./assets/css/material-design-icons.css" />
+    <link rel="stylesheet" href="./assets/css/my-typography.css" />
+    <link rel="stylesheet" href="./assets/css/my-icons.css" />
+    <link rel="stylesheet" href="./assets/css/my-app.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" type="text/css" />
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main monserrat">
+        <div data-name="start" class="page text-color-gray"></div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="./assets/js/framework7.bundle.min.js"
+    ></script>
+    <script type="text/javascript" src="./assets/js/my-app.js"></script>
+    <script type="text/javascript" src="./assets/js/pages.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("DOMContentLoaded", deviceReady, false);
+      function deviceReady() {
+        mainView.router.navigate("/intro/", { animate: true });
+        //
+      }
+      //
+    </script>
+  </body>
+</html>
